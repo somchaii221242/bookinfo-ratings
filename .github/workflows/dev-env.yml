@@ -20,6 +20,3 @@ jobs:
         with:
           push: true
           tag: ghcr.io/somchaii221242/bookinfo-ratings:dev
-      - run: docker build -t ghcr.io/somchaii221242/bookinfo-ratings:dev .
-      - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-      - run: docker push ghcr.io/somchaii221242/bookinfo-ratings:dev
