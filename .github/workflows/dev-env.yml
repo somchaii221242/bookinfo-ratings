@@ -48,7 +48,7 @@ jobs:
             }
   acceptacnce-test:
     needs:deploy
-    runs-on: ubantu-20.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Acceptacnce test
         run: curl http://bookinfo.dev.opsta.net/student[X]/ratings/health | grep "Ratings is working"      
